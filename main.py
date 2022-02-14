@@ -11,7 +11,25 @@ from os.path import isfile, isdir, join
 import keep_alive
 
 
-  
+def load():
+  mypath="commands"
+  files = listdir(mypath)
+  for f in files:
+    fullpath = join(mypath, f)
+    if isfile(fullpath):
+      file=f.replace(".py", "")
+      print(f"{mypath}.{file}")
+      bot.load_extension(f"{mypath}.{file}")
+
+def reload():
+  mypath="commands"
+  files = listdir(mypath)
+  for f in files:
+    fullpath = join(mypath, f)
+    if isfile(fullpath):
+      file=f.replace(".py", "")
+      print(f"{mypath}.{file}")
+      bot.reload_extension(f"{mypath}.{file}")
 intents = discord.Intents.default()
 intents.members = True
 bot = commands.Bot(command_prefix='wa!',
@@ -52,16 +70,13 @@ async def on_member_join(member):
 @bot.command()
 async def tests(ctx):
   await ctx.send(":x:")
+
+@bot.command(name='reload')
+async def reload_():
+  reload()
 if __name__ == '__main__':
   try:
-    mypath="commands"
-    files = listdir(mypath)
-    for f in files:
-      fullpath = join(mypath, f)
-      if isfile(fullpath):
-            file=f.replace(".py", "")
-            print(f"{mypath}.{file}")
-            bot.load_extension(f"{mypath}.{file}")
+    load()
     #bot.load_extension('commands.chat')
   except Exception as error:
     print(error)
