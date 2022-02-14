@@ -1,0 +1,26 @@
+{
+  "files": {
+    "commands/chat.py": [
+      {
+        "id": "315f8d6a-1b02-4dec-9017-08c45fbf5e62",
+        "line": 9,
+        "version": 1596,
+        "index": 166
+      },
+      {
+        "id": "240f8ffb-e85b-4136-9386-86dc2cacf375",
+        "line": 52,
+        "version": 1596,
+        "index": 1752
+      }
+    ],
+    "main.py": [
+      {
+        "id": "31de1bbe-fe54-487f-b3f3-aa7e51502283",
+        "line": 11,
+        "version": 1844,
+        "index": 256
+      }
+    ]
+  }
+}

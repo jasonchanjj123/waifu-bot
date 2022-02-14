@@ -1,0 +1,10 @@
+{      
+  "bot1":{
+        "token":"ODg5MTEwMjc5NDk2MDE1OTAy.YUceeQ.HiK15e_5y5jW0oJ0yKoXAvU4EF4",
+        "invite_Link":"https://discord.com/api/oauth2/authorize?client_id=889110279496015902&permissions=0&scope=bot"
+  },
+  "bot2":{
+        "token":"OTM4MjkxODYzNzM0MDc1NDAy.YfoKZA.Q-ddfybKOls4ALiES-QwB7JrKpE",
+        "invite_Link":"https://discord.com/api/oauth2/authorize?client_id=938291863734075402&permissions=8&scope=bot%20applications.commands"
+  }
+}
